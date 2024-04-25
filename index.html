@@ -16,9 +16,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- scripts-->
-    <script src="./script.js" defer></script>
+    <script src="./js/script.js" defer type="module"></script>
 </head>
 <body>
+
+    <div class="alert-error">
+        Digite somente números
+    </div>
 
     <div class="container">
         <main class="card">
@@ -33,7 +37,7 @@
                 </div>
 
                 <div class="input-wrapper">
-                    <label for="height">Altura (m)</label>
+                    <label for="height">Altura (cm)</label>
                     <input 
                         id="height" 
                         type="text"
@@ -48,17 +52,16 @@
         </main>
     </div>
 
-    <div class="modal-wrapper open">
+    <div class="modal-wrapper">
         <div class="modal card">
             <h2 class="title">
 
-              <button class="close">
-                  <img src="./assets/close.svg" alt="imagem para fechar o popup">
-              </button>
+                <button class="close">
+                    <img src="./assets/close.svg" alt="imagem para fechar o popup">
+                </button>
 
-              Seu IMC é de 28
-            </h2>      
-
+                <span>Seu IMC é de 28</span>
+            </h2>
         </div>
     </div>
 
