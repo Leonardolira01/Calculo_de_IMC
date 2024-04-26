@@ -13,5 +13,13 @@ export const Modal = {
 Modal.buttonClose.onclick = () => {
   Modal.close()
 }
+
+window.addEventListener('keydown', handleKeydown)
+
+function handleKeydown(event) {
+  if (event.key === 'Escape') {
+      Modal.close()
+  }
+}
 //ou posso fazer assim, quando a arrow tem apenas uma linha, posso tirar as chaves:
 // modalBtnClose.onclick = () => modalWrapper.classList.remove('open')
